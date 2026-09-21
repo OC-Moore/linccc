@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "linccc"
+version = "0.1.0"
+description = "Lin's Concordance Correlation Coefficient (CCC) for Python"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Opal Moore", email = "moore.41664@outlook.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.20",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+keywords = ["statistics", "concordance", "correlation", "agreement", "Lin", "CCC"]
+
+[project.urls]
+Homepage = "https://github.com/OC-Moore/linccc"
+Issues = "https://github.com/OC-Moore/linccc/issues"
+
+[project.optional-dependencies]
+test = ["pytest>=7.0", "pandas>=1.3"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/linccc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

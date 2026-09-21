@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, and cite Lin (1989) for the underlying statistic."
+title: "linccc: Lin's Concordance Correlation Coefficient for Python"
+type: software
+authors:
+  - family-names: "Moore"
+    given-names: "Opal"
+version: 0.1.0
+date-released: "2026-09-21"
+url: "https://github.com/OC-Moore/linccc"
+references:
+  - type: article
+    authors:
+      - family-names: "Lin"
+        given-names: "L. I."
+    title: "A concordance correlation coefficient to evaluate reproducibility"
+    journal: "Biometrics"
+    volume: 45
+    issue: 1
+    start: 255
+    end: 268
+    year: 1989
